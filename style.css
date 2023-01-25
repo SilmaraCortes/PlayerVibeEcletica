@@ -43,7 +43,8 @@ h2 {
 
     progress {
         height: 6px;
-        width: 50%;
+        width: 0;
+        background-color: #333;
     }
 
     .ponto {
@@ -51,7 +52,7 @@ h2 {
         height: 20px;
         background-color: #eee;
         border-radius: 50px;
-        margin-left: -2px;
+        margin-left: -10px;
     }
     .tempo {
         display: flex;
