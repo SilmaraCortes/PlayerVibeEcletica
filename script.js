@@ -1,18 +1,58 @@
+let musicas = [
+    {titulo:'Me adora', artista:'Pitty', src:'musicas/Me adora.mp3',
+    img:'imagens/BATERIA.jpg'},
+    {titulo:'Trevo (Tu)', artista:'Anavitoria', src:'musicas/Trevo (Tu).mp3',
+    img:'imagens/musicacalma.jpg'},
+    {titulo:'Is this love', artista:'Bob Marley', src:'musicas/Is This Love.mp3',
+    img:'imagens/musicadeamor.jpg'},
+    {titulo:'Natural', artista:'Imagine Dragons', src:'musicas/Imagine_Dragons_-_Natural.mp3',
+    img:'imagens/rockandroll.jpg'},
+    {titulo:'Malandragem', artista:'Cassia Eller', src:'musicas/Cássia Eller - Malandragem.mp3',
+    img:'imagens/musicaviolao.jpg'},
+];
+
+
 let musica = document.querySelector('audio');
+let indexMusica = 0;
 
 let duracaoMusica = document.querySelector('.fim');
 let imagem = document.querySelector('img');
 let nomeMusica = document.querySelector('.descricao h2');
 let nomeArtista = document.querySelector('.descricao i');
 
-
-duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+renderizarMusica(indexMusica);
 
 document.querySelector('.botao-play').addEventListener('click', tocarMusica);
 
 document.querySelector('.botao-pause').addEventListener('click', pausarMusica);
 
 musica.addEventListener('timeupdate', atualizarBarra);
+
+document.querySelector('.anterior').addEventListener('click', () => {
+    indexMusica --;
+    if (indexMusica < 0) {
+        indexMusica = 2;
+    }
+    renderizarMusica(indexMusica);
+});
+
+document.querySelector('.proxima').addEventListener('click', () => {
+    indexMusica ++;
+    if (indexMusica > 2) {
+        indexMusica = 0;
+    }
+    renderizarMusica(indexMusica);
+});
+
+function renderizarMusica(index){
+    musica.setAttribute('src', musicas[index].src);
+    musica.addEventListener('loadeddata', () => {
+       nomeMusica.textContent = musicas[index].titulo;
+       nomeArtista.textContent = musicas[index].artista;
+       imagem.src = musicas[index].img;
+       duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+}
 
 function tocarMusica() {
     musica.play();
