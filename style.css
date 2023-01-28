@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 body, html {
     margin: 0;
@@ -10,7 +10,7 @@ body, html {
     height: 100vh;
     background-color: #C71585;
     color: #ddd;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Raleway', sans-serif;
 }
 
 img {
