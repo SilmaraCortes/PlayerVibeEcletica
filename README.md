@@ -32,18 +32,20 @@ Minha experiência
 Foi incrível criar meu primeiro player de músicas, além de adicionar músicas que eu gosto, aprendi muito na parte de estilização e javascript, 
 logo abaixo detalhei um pouco mais sobre os comandos realizados neste projeto.
 
-Na estilização usei cores mais delicadas, dois tipos de rosa(um rosa mais claro e um de tom mais envelhecido) e o branco puro que super combinam.
+Na estilização usei:
+
+* Cores mais delicadas, dois tipos de rosa(um rosa mais claro e um de tom mais envelhecido) e o branco puro que super combinam.
 
 Em javascript usei:
 
-Array: para colocar todas as informações das músicas que serão reproduzidas no player de música,
+* Array: para colocar todas as informações das músicas que serão reproduzidas no player de música,
 
-Let: para armazenar as variáveis,
+* Let: para armazenar as variáveis,
 
-Document.querySelector: que retorna o primeiro elemento dentro do documento (usando ordenação em profundidade, pré-ordenada e transversal dos nós do documento)
+* Document.querySelector: que retorna o primeiro elemento dentro do documento (usando ordenação em profundidade, pré-ordenada e transversal dos nós do documento)
 que corresponde ao grupo especificado de seletores,
 
-Function: são blocos de construção fundamentais em JavaScript, um conjunto de instruções que executa uma tarefa ou calcula um valor,
+* Function: são blocos de construção fundamentais em JavaScript, um conjunto de instruções que executa uma tarefa ou calcula um valor,
 
-Math.floor: O método Math.floor é usado para arredondar o número passado como um parâmetro para seu inteiro mais próximo na direção para baixo do arredondamento.
+* Math.floor: O método Math.floor é usado para arredondar o número passado como um parâmetro para seu inteiro mais próximo na direção para baixo do arredondamento.
 
