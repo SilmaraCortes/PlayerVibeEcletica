@@ -7,9 +7,9 @@ Este é um player de músicas que eu dei o nome de eclética pois contém estilo
 
 Tecnologias Usadas
 
-Html
-Css
-Javascript
+* Html
+* Css
+* Javascript
 
 
 
