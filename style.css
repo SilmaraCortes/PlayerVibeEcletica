@@ -8,8 +8,8 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #C71585;
-    color: #ddd;
+    background: linear-gradient(120deg,  #FFB6C1, #c54d4dda);
+    color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
 }
 

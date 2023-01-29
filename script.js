@@ -1,13 +1,13 @@
 let musicas = [
     {titulo:'Me adora', artista:'Pitty', src:'musicas/Me adora.mp3',
     img:'imagens/BATERIA.jpg'},
-    {titulo:'Trevo (Tu)', artista:'Anavitoria', src:'musicas/Trevo (Tu).mp3',
+    {titulo:'Trevo (Tu)', artista:'Anavitória', src:'musicas/Trevo (Tu).mp3',
     img:'imagens/musicacalma.jpg'},
     {titulo:'Is this love', artista:'Bob Marley', src:'musicas/Is This Love.mp3',
     img:'imagens/musicadeamor.jpg'},
     {titulo:'Natural', artista:'Imagine Dragons', src:'musicas/Imagine_Dragons_-_Natural.mp3',
     img:'imagens/rockandroll.jpg'},
-    {titulo:'Malandragem', artista:'Cassia Eller', src:'musicas/Cássia Eller - Malandragem.mp3',
+    {titulo:'Malandragem', artista:'Cássia Eller', src:'musicas/Cássia Eller - Malandragem.mp3',
     img:'imagens/musicaviolao.jpg'},
 ];
 
@@ -38,7 +38,7 @@ document.querySelector('.anterior').addEventListener('click', () => {
 
 document.querySelector('.proxima').addEventListener('click', () => {
     indexMusica ++;
-    if (indexMusica > 2) {
+    if (indexMusica > 5) {
         indexMusica = 0;
     }
     renderizarMusica(indexMusica);
